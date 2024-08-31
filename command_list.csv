@@ -1,0 +1,28 @@
+    1  clear
+    2  git config --global user.name "Oleksii Reznichenko"
+    3  git config --global user.email rezoleks@gmail.com
+    4  git clone https://github.com/Longerochek/HW_10.git
+    5* 
+    6  touch text_ignore.txt
+    7  cd /c/HW_10/HW_10
+    8  touch text_ignore.txt
+    9  nano .gitignore
+   10  git status
+   11  git add text_ignore.txt
+   12  git commit -m "End of Task 1"
+   13  touch main_test.txt
+   14  git add main_test.txt
+   15  git commit -m "End of Task 2"
+   16  git status
+   17  git checkout -b develop
+   18  touch develop_test.txt
+   19  git add develop_test.txt
+   20  git commit -m "Half of Task3"
+   21  nano develop_test.txt
+   22  git status
+   23  git add develop_test.txt
+   24  git commit -m "End of Task 3"
+   25  git checkout main
+   26  git merge develop
+   27  git log
+   28  history > command_list.csv
